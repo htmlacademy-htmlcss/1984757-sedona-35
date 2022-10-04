@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a>
+        <a class="header-logo" href="index.html">
           <img class="logo" src="images/vector/logo.svg" alt="Герб города Седоны." width="140" height="70">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-home navigation-home-current" href="home.html">Главная</a>
+            <a class="navigation-link navigation-home-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-about" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-hotels" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -40,8 +41,8 @@
     <main class ="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Туристический сайт города Седоны</h1>
-        <img src="images/vector/welcome.svg" alt="Welcome to the gorgeous Sedona. Decause the grand Canyon sucrs." width="458" height="352">
-        <h2 class="hero-about">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <img class="welcome" src="images/vector/welcome.svg" alt="Welcome to the gorgeous Sedona. Decause the grand Canyon sucrs." width="458" height="352">
+        <h2 class="hero-about">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
        </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -51,7 +52,7 @@
             <article>
             <h3 class="advantages-title city">Настоящий городок</h3>
             <p class ="advantages-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="photo-1" src="images/photo_sedona/photo_house.jpg" alt="Фотография города Седоны, на переднем плане находится дом с террасой, на котором висят флаги." width="800" height="384">
+          <img class="photo_house" src="images/photo_sedona/photo_house.jpg" alt="Фотография города Седоны, на переднем плане находится дом с террасой, на котором висят флаги." width="800" height="384">
             </article>
           </li>
           <li class="advantages-item">
@@ -74,7 +75,7 @@
           </li>
           <li class="advantages-item">
             <article>
-          <img class="photo-2" src="images/photo_sedona/photo_bridge.jpg" alt="Фотография горного ущелья, через который проложен узкий мост, называемый мостом дьявола." width="800" height="384">
+          <img class="photo_bridge" src="images/photo_sedona/photo_bridge.jpg" alt="Фотография горного ущелья, через который проложен узкий мост, называемый мостом дьявола." width="800" height="384">
             <h3 class="advantages-title city">Там есть мост дьявола</h3>
             <p class ="advantages-description">Да, но по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </article>
@@ -105,8 +106,8 @@
       </section>
       <section class="search-hotel">
         <h2 class="search-hotel-title">Заинтересовались?</h2>
-        <p class ="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне.</button>
+        <p class ="search-hotel-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
