@@ -114,16 +114,20 @@
           <div class="catalog-filter-selection">
            <fieldset>
              <legend class="catalog-filter-title">Стоимость, P:</legend>
-             <input type="number" min="0" max="9000">
+             <div class="input-filter">
+             <input name="number"  type="number" min="0" max="9000" placeholder="0  от  9000  до">
              <input type="range">
+             </div>
            </fieldset>
+           <div class="filter-button">
            <button class="button button-filter-blue" type="submit">Применить</button>
-           <button class="button " type="reset">Сбросить</button>
+           <button class="button button-filter-brown" type="reset">Сбросить</button>
+           </div>
           </div>
          </form>
        </section>
       </div>
-       <header class="search-hotel">
+       <header class="search-hotel-inner">
           <h2 class="search-result-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -155,58 +159,76 @@
              <img class="hotel-card-image" src="images/hotel/hotel-Amara.jpg" alt="Фотография синего звездного неба, проглядывающего сквозь горное ущелье." width="300" height="212">
              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
            </a>
+           <div class="hotel-content">
            <span class="type-hotel">Гостиница</span>
            <span class="hotel-card-price">От 4000 Р</span>
+           <div class="button-hotel-card">
            <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
            <a class="button hotel-card-button button-blue" href="#">В избранное</a>
+           </div>
            <p class="stars stars-four">
              <span class="visually-hidden">4 звезды</span>
            </p>
            <p class="hotels-rating"> Рейтинг: 8,5</p>
+           </div>
          </li>
+
          <li class="hotel-item">
            <a class="hotel-card-link" href="hotel.html">
              <img class="hotel-card-image" src="images/hotel/hotel-Villas.jpg" alt="Фотография горы, освещенной солнцем, проглядывающим через тучу, с радугой, идущей от земли к небу." width="300" height="212">
              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
            </a>
+           <div class="hotel-content">
            <span class="type-hotel">Гостиница</span>
            <span class="hotel-card-price">От 5000 Р</span>
+           <div class="button-hotel-card">
            <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
            <a class="button hotel-card-button button-green" href="#">В избранном</a>
+           </div>
            <p class="stars stars-four">
              <span class="visually-hidden">4 звезды</span>
             </p>
            <p class="hotels-rating"> Рейтинг: 9,2</p>
+           </div>
          </li>
          <li class="hotel-item">
            <a class="hotel-card-link" href="hotel.html">
              <img class="hotel-card-image" src="images/hotel/hotel-Desert.jpg" alt="Фотография горы на фоне голубого неба в прекрасный солнечный день." width="300" height="212">
              <h3 class="hotel-card-title">Desert Quail Inn</h3>
            </a>
+           <div class="hotel-content">
            <span class="type-hotel">Гостиница</span>
            <span class="hotel-card-price">От 2500 Р</span>
+           <div class="button-hotel-card">
            <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
            <a class="button hotel-card-button button-blue" href="#">В избранное</a>
+           </div>
            <p class="stars stars-three">
              <span class="visually-hidden">3 звезды</span>
             </p>
            <p class="hotels-rating"> Рейтинг: 6,9</p>
+           </div>
          </li>
          <li class="hotel-item">
            <a class="hotel-card-link" href="hotel.html">
             <img class="hotel-card-image" src="images/hotel/hotel-GreenTree.jpg" alt="Фотография горы с отблесками солнца при его закате на фоне темного звездного неба" width="300" height="212">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
            </a>
+           <div class="hotel-content">
            <span class="type-hotel">Гостиница</span>
            <span class="hotel-card-price">От 1500 Р</span>
+           <div class="button-hotel-card">
            <a class="button hotel-card-button button-brown" href="#">Подробнее</a>
            <a class="button hotel-card-button button-blue" href="#">В избранное</a>
+           </div>
            <p class="stars stars-two">
              <span class="visually-hidden">2 звезды</span>
             </p>
            <p class="hotels-rating"> Рейтинг: 5,0</p>
+           </div>
          </li>
         </ul>
+        <div class="pagination-container">
         <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -230,9 +252,10 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+        </div>
       </section>
       <section class="subscribe-inner">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title-inner">Подпишитесь на рассылку</h2>
         <p class="subscribe-description-inner">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https//echo.html.ru" method="post">
            <label for="subscribe-email"></label>
