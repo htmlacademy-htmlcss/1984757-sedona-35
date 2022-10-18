@@ -375,6 +375,8 @@ body {
 
 .search-hotel {
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .search-hotel-interest-description {
   font-weight: 700;
@@ -383,7 +385,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 96px;
   margin-bottom: 20px;
 }
 .search-hotel-description {
@@ -396,7 +397,6 @@ body {
   margin: 0;
   width: 376px;
   padding: 8px 50px;
-  margin-bottom: 96px;
 }
 /*стили для секции subscribe главной страницы*/
 
@@ -407,6 +407,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 .subscribe-title {
   font-size: 30px;
@@ -414,7 +416,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 96px;
   margin-bottom: 20px;
 }
 .subscribe-description {
@@ -431,7 +432,6 @@ body {
   box-sizing: border-box;
   padding-right: 258px;
   padding-left: 258px;
-  padding-bottom: 104px;
 }
 .subscribe-form input {
   grid-column: 1/2;
@@ -838,7 +838,6 @@ body {
   width: 191px;
   box-sizing: border-box;
   padding-top: 56px;
-
 }
 
 .button-filter-blue {
@@ -957,7 +956,7 @@ body {
   grid-template-rows: repeat (3, min-content);
   column-gap: 20px;
   row-gap: 16px;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 .type-hotel{
   grid-row: 1/2;
@@ -976,12 +975,11 @@ body {
   grid-column: 1/2;
   margin: 0;
   padding: 0;
-
 }
 .hotel-card-price {
   grid-row: 1/2;
   grid-column: 2/3;
-  padding-left: 120px;
+  justify-self: end;
 }
 .hotels-rating {
   grid-row: 3/4;
@@ -989,6 +987,7 @@ body {
   background-color: #F2F2F2;
   border-radius: 4px;
 }
+
 .button-brown {
   padding: 8px 26px;
   margin-right: 20px;
@@ -1016,6 +1015,8 @@ body {
   padding: 0;
   margin-bottom: 16px;
   padding-left: 20px;
+  justify-self: center;
+
 }
 .hotel-card-image {
   margin-bottom: 16px;
