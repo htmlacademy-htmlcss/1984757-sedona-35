@@ -77,7 +77,7 @@ body {
 }
 .logo {
   object-fit: contain;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
 }
 .navigation-list {
   display: flex;
@@ -88,6 +88,9 @@ body {
   max-width: 400px;
   align-items: center;
 
+}
+.navigation-left {
+  margin-left: 28px;
 }
 .navigation-user {
   margin-left: auto;
@@ -271,9 +274,8 @@ body {
   background-image: url("../images/vector/icon-hero.svg"), url("../images/picture/hero-welcome.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
-  background-position: bottom center, center;
+  background-position:  bottom  center, bottom  center;
   text-align: center;
-
 }
 .welcome {
  padding-top: 51px;
@@ -504,6 +506,9 @@ body {
 }
 .subscribe-form input {
   grid-column: 1/2;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 0;
@@ -520,6 +525,8 @@ body {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   margin: 0;
+  font-size: 20px;
+  line-height: 36px;
   padding: 8px 50px;
 }
 
@@ -533,7 +540,7 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
-  padding: 45px 70px 35px;
+  padding: 40px 70px 30px;
 }
 .footer-social-list {
   display: flex;
@@ -1179,7 +1186,7 @@ a[href^="tel:"]:active {
 }
 .toggle-max {
   top: -8px;
-  right:-10px;
+  right: 0px;
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1195,10 +1202,10 @@ a[href^="tel:"]:active {
   display: flex;
 }
 .range-input {
-  max-width: 74px;
+  max-width: 288px;
   height: 48px;
   padding: 0;
-  padding-left: 70px;
+  padding-left: 83px;
   margin: 0;
   font: inherit;
   font-weight: 700;
@@ -1310,7 +1317,7 @@ a[href^="tel:"]:active {
 }*/
 .filter-button {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 36px 36px;
   row-gap: 32px;
   box-sizing: border-box;
   padding-top: 56px;
@@ -1328,7 +1335,7 @@ a[href^="tel:"]:active {
 .search-hotel-inner {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 61px;
+  margin-bottom: 47px;
 
   /*margin-left: auto;*/
 }
@@ -1349,8 +1356,11 @@ a[href^="tel:"]:active {
 }
 .select-control {
   width: 100%;
-  padding: 14px 20px;
-  padding-right: 48px; /*резервируем место*/
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  /*padding-right: 48px; /*резервируем место*/
+  padding-right: 86px;
   line-height: 21px;
   font-size: 18px;
   border: 2px solid rgba(230, 230, 230, 1);
