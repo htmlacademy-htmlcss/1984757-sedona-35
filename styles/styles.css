@@ -330,10 +330,8 @@ body {
   grid-column: 3/4;
 }
 .advantages-item {
-  padding-top: 92px;
-  padding-left:  85px;
-  padding-right: 85px;
-  padding-bottom: 111px;
+  padding:  92px 50px 111px;
+
 }
 .advantages-item-town,
 .advantages-item-bridge {
@@ -460,6 +458,8 @@ body {
 .search-hotel-description {
   margin: 0;
   padding: 0;
+  font-size: 22px;
+  line-height: 26px;
   margin-bottom: 54px;
 }
 .search-button {
@@ -492,6 +492,8 @@ body {
 .subscribe-description {
   margin: 0;
   padding: 0;
+  font-size: 22px;
+  line-height: 26px;
   margin-bottom: 54px;
 }
 
@@ -637,9 +639,9 @@ a[href^="tel:"]:active {
   z-index: 99;
   background-color: rgba(242, 242, 242, 0.8);
 }
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
 .modal {
   position: relative;
   margin:  auto;
@@ -1186,7 +1188,7 @@ a[href^="tel:"]:active {
 }
 .toggle-max {
   top: -8px;
-  right: 0px;
+  right: 0;
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1347,20 +1349,19 @@ a[href^="tel:"]:active {
   margin-right: 200px;
   padding: 0;
 }
-.select {
+.select-sorting-type {
   position: relative;
   display: flex;
-  align-items: center;
   width: 292px;
-  margin-right: auto;
+  align-items: center;
+  margin-right: auto;  /*70px*/
 }
 .select-control {
   width: 100%;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 20px;
-  /*padding-right: 48px; /*резервируем место*/
-  padding-right: 86px;
+  padding-right: 48px; /*резервируем место*/
   line-height: 21px;
   font-size: 18px;
   border: 2px solid rgba(230, 230, 230, 1);
