@@ -142,7 +142,7 @@ body {
 .navigation-home-current::before {
   position: absolute;
   right: 16px;
-  bottom: -5px;
+  bottom: -2px;
   left: 16px;
   background-color: rgba(117, 98, 87, 1);
   content: "";
@@ -151,7 +151,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
-  bottom: -5px;
+  bottom: -2px;
   left: 16px;
   background-color: rgba(117, 98, 87, 1);
   content: "";
@@ -311,7 +311,6 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
 .advantages-item-town,
 .advantages-item-square {
   grid-column: 1/2;
@@ -740,13 +739,7 @@ a[href^="tel:"]:active {
   background-color:#F2F2F2;
   margin-top: -8px;
 }
-.field::placeholder{
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-  padding-left: 20px;
-}
+
 .quest-form-date {
   position: relative;
 }
@@ -762,8 +755,13 @@ a[href^="tel:"]:active {
   background-repeat: no-repeat;
   background-position: 402px center;
   cursor: pointer;
-  background-color: #F2F2F2;
-  opacity: 0.3;
+}
+.quest-form-field::placeholder{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  padding-left: 20px;
 }
 /*.quest-form .field-group {
   margin: 0;
