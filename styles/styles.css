@@ -330,7 +330,6 @@ body {
 }
 .advantages-item {
   padding:  92px 50px 111px;
-
 }
 .advantages-item-town,
 .advantages-item-bridge {
@@ -635,7 +634,6 @@ a[href^="tel:"]:active {
   display: flex;
   width: 100%;
   height: 100%;
-  z-index: 99;
   background-color: rgba(242, 242, 242, 0.8);
 }
 /*.modal-container-close {
@@ -649,7 +647,7 @@ a[href^="tel:"]:active {
   border: none;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  max-width: 717px;
+
 }
 .modal-quest {
   max-width: 717px;
@@ -657,7 +655,6 @@ a[href^="tel:"]:active {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  margin: 0;
   top: 64px;
   right: 52px;
   width: 52px;
@@ -670,7 +667,8 @@ a[href^="tel:"]:active {
 .modal-quest .modal-close-button::before,
 .modal-quest .modal-close-button::after {
   position: absolute;
-  top: 24px;
+  box-sizing: border-box;
+  top: 26px;
   left: 20px;
   width: 14px;
   height: 2px;
@@ -707,53 +705,74 @@ a[href^="tel:"]:active {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-right: 55px;
 }
-.field-group {
+.quest-form .field-group {
  margin: 0;
- padding: 0;
  font-size: 20px;
  line-height:24px;
  font-weight: 700;
 }
+.field-date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.start-date,
+.finish-date {
+  margin-bottom: 48px;
+
+}
+
 .validity,
 .invalidity {
   margin: 0;
   padding: 0;
-  padding-left: 157px;
+ /* padding-left: 157px;*/
   display: block;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
   margin-bottom: 23px;
-  margin-top: 20px;
+  margin-left: 20px;
 }
 .invalidity {
   color: rgba(255, 87, 87, 1);
 }
-.field {
-  /*max-width: 440px;*/
+.quest-form-field:required:invalid  {
+  color: rgba(255, 87, 87, 1);
+}
+.quest-form .field {
+  width: 440px;
   /*padding: 12px 20px;*/
+  display: block;
   border-radius: 4px;
+  border: none;
   min-height: 48px;
   background-color:#F2F2F2;
-  margin-top: -8px;
+  margin-bottom: 4px;
 }
 
 .quest-form-date {
   position: relative;
 }
-.quest-form-date .field-open,
-.quest-form-date .field-close{
+.quest-form-field {
+  /*margin-left: 137px;
+  margin-top: -36px;*/
+}
+ .field-open,
+ .field-close{
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 16px;
+  right: 17px;
   width: 16px;
   height: 15px;
   background-image: url("../images/vector/icon-quest.svg");
   background-repeat: no-repeat;
-  background-position: 402px center;
+  background-position:  center;
   cursor: pointer;
 }
 .quest-form-field::placeholder{
@@ -763,6 +782,18 @@ a[href^="tel:"]:active {
   color: rgba(0, 0, 0, 1);
   padding-left: 20px;
 }
+.quest-form-field:hover,
+.quest-form-field:focus,
+.quest-form-field:active {
+background-color: rgba(230, 230, 230, 1);
+}
+.quest-form-field:focus{
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+.quest-form-field:active {
+  outline: 2px solid rgba(0, 0, 0, 1);
+}
+
 /*.quest-form .field-group {
   margin: 0;
   /*margin-bottom:23px;
@@ -772,9 +803,9 @@ a[href^="tel:"]:active {
   justify-content: space-between;
   font-weight: 700;
 }
-.quest-form .field {
- width: 440px;
-}
+/*.field-group .quest-form-field{
+  width: 440px;
+}*/
 .quest-button {
   display: block;
   box-sizing: border-box;
@@ -786,9 +817,11 @@ a[href^="tel:"]:active {
   border-radius: 10px;
   background-color: rgba(131, 179, 211, 1);
 }
+
+
 .button-minus,
 .button-plus {
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   background-color: rgba(242, 242, 242, 1);
   width: 40px;
@@ -809,8 +842,10 @@ a[href^="tel:"]:active {
 .button-plus:focus {
   background-color: #E5E5E5;
   border: 3px solid rgba(130, 179, 211, 1);
-  border-radius: 4px;
+
+
 }
+
 .button-minus:active,
 .button-plus:active {
  background-color: #E5E5E5;
@@ -821,8 +856,8 @@ a[href^="tel:"]:active {
   margin: 0;
   padding: 0;
   width: 31px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
   background-color: rgba(242, 242, 242, 1);
   border: none;
@@ -849,6 +884,7 @@ a[href^="tel:"]:active {
   position: relative;
   min-height: 48px;
 }
+
 .quest-form-button .button-minus::before {
   position: absolute;
   top:23px;
@@ -907,6 +943,7 @@ a[href^="tel:"]:active {
   margin: 0;
   display: block;
   border-radius: 50%;
+  cursor: pointer;
 }
 .tooltip-text {
   background-color: #333333;
@@ -933,9 +970,11 @@ a[href^="tel:"]:active {
   color: #FFFFFF;
   display: block;
 }
-.tooltip-toggle:hover .icon-tooltip {
+
+/*.tooltip-toggle:hover + .icon-tooltip {
   color: #7DB54F;
-}
+  cursor: pointer;
+}*/
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
@@ -1189,7 +1228,9 @@ a[href^="tel:"]:active {
   right: 0;
 }
 .range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input::-webkit-inner-spin-button,
+.range-input::-moz-outer-spin-button,
+.range-input::-moz-inner-spin-button {
   appearance: none;
   margin: 0;
 }

@@ -177,22 +177,29 @@
     </footer>
     </div>
     <div class="modal-container modal-container-close">
-     <dialog class="modal modal-quest" open="open" name="close-modal" id="close-modal">
+     <dialog class="modal modal-quest" open="open"  id="modal-open">
+      <!--<button class="modal-close-button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>-->
        <section class="modal-content">
          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
          <form class="quest-form" action="#" method="dialog">
            <button class="modal-close-button">
              <span class="visually-hidden">Закрыть.</span>
            </button>
-           <p class="field-group">Дата Заезда:
+           <p class="field-group field-date"><span class="start-date">Дата заезда:</span>
              <label class="quest-form-date">
-               <input class="quest-form-field field field-open" type="text" name="my-date" min="21 ноября 2022" max="21 ноября 2023" placeholder="27 апреля 2020" disabled>
-               <span class="invalidity">Мы не можем отправить вас в прошлое.</span>
+
+              <input class="quest-form-field field" type="text" name="my-date" min="21 ноября 2022" max="21 ноября 2023" placeholder="27 апреля 2020" required>
+               <span class="field-open"></span>
+              <span class="invalidity">Мы не можем отправить вас в прошлое.</span>
              </label>
            </p>
-           <p class="field-group">Дата Выезда:
+           <p class="field-group field-date"><span class="finish-date">Дата выезда:</span>
              <label class="quest-form-date">
-               <input class="quest-form-field field field-close" type="text" name="my-date" min="21 ноября 2022" max="21 ноября 2023" placeholder="1 сентября 2023" disabled>
+
+               <input class="quest-form-field field" type="text" name="my-date" min="21 ноября 2022" max="21 ноября 2023" placeholder="1 сентября 2023" required>
+               <span class="field-close"></span>
                <span class="validity">На эти даты есть свободные номера. Пока есть.</span>
              </label>
            </p>
@@ -200,9 +207,17 @@
              <p class="field-group quest-form-user-options">
                <span class="user">Взрослые:</span>
                <label class="quest-form-button">
-                 <button class="button button-minus" type="button"></button>
+
+                 <button class="button button-minus" type="button">
+                   <span class="visually-hidden">Убавить количество взрослых.</span>
+                </button>
+
                  <input class="plus-minus" type="text" placeholder="2" disabled>
-                 <button class="button button-plus" type="button"></button>
+
+                 <button class="button button-plus" type="button">
+                   <span class="visually-hidden">Прибавить количество взрослых.</span>
+                </button>
+
                </label>
               </p>
              <p class="field-group quest-form-user-options">
@@ -220,9 +235,13 @@
                  </label>
                </span>
                <label class="quest-form-button quest-form-button-children" >
-                 <button class="button button-minus" type="button"></button>
+                 <button class="button button-minus" type="button">
+                   <span class="visually-hidden">Убавить количество детей.</span>
+                </button>
                  <input class="plus-minus" type="text" placeholder="2" disabled>
-                 <button class="button button-plus" type="button"></button>
+                 <button class="button button-plus" type="button">
+                   <span class="visually-hidden">Прибавить количество детей.</span>
+                </button>
                </label>
              </p>
            </div>
@@ -231,7 +250,7 @@
             </button>
          </form>
        </section>
-     </dialog>
+      </dialog>
     </div>
   </body>
 </html>
