@@ -81,8 +81,10 @@ body {
   padding-right: 70px;
 }
 .logo {
+  display: block;
   object-fit: contain;
   margin-bottom: -6px;
+  z-index: 1;
 }
 .navigation-list {
   display: flex;
@@ -182,8 +184,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   margin-top: 11px;
   margin-left: 20px;
   line-height: 10px;
@@ -480,7 +482,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .subscribe-description {
   margin: 0;
