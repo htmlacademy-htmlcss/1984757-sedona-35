@@ -116,21 +116,18 @@ body {
   font-weight: 700;
   position: relative;
 }
+.header-logo:hover,
 .header-logo:focus {
   box-shadow: 0 3px 3px 3px #68A2CA;
   border-radius: 6px;
 }
 .header-logo:focus-visible {
   outline: none;
- box-shadow: 0 3px 3px 3px #68A2CA;
- border-radius: 6px;
-}
-.header-logo:focus,
-.header-logo:hover {
-  opacity: 0.7;
+  box-shadow: 0 3px 3px 3px #68A2CA;
+  border-radius: 6px;
 }
 .header-logo:active {
-  opacity: 0.3;
+  outline: 3px solid #E6E6E6;
 }
 .navigation-item a:focus-visible {
   outline: none;
@@ -144,7 +141,6 @@ body {
 }
 .navigation-item a:active {
   outline: 3px solid #E6E6E6;
-  opacity: 0.7;
 }
 .navigation-home-current::before {
   position: absolute;
@@ -239,7 +235,7 @@ body {
 }
 .button-blue:hover,
 .button-blue:focus {
-  background-color: #68A2CA ;
+  background-color: #68A2CA;
 }
 .button-blue:active {
   background-color: #82B3D3;
@@ -255,10 +251,9 @@ body {
 .button-green:active {
  color: rgba(255, 255, 255, 0.3);
 }
-.button-filter-brown:hover{
-  opacity: 60%;
+.button-filter-brown:hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.6);
 }
 .button-filter-brown:focus {
   outline: 3px solid #83B3D3;
@@ -273,7 +268,7 @@ body {
 /*стили для секции hero*/
 
 .hero {
-  background-color: #6e90a7;
+  background-color: #6E90A7;
   color: #756157;
   background-image: url("../images/vector/icon-hero.svg"), url("../images/picture/hero-welcome.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -350,14 +345,14 @@ body {
   color: #FFFFFF;
 }
 .advantages-title {
- position: relative;
- font-size: 24px;
- line-height: 28px;
- text-transform: uppercase;
- font-weight: 700;
- margin: 0;
- padding: 0;
- margin-bottom: 62px;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 62px;
 }
 .advantages-title::before {
   position: absolute;
@@ -373,7 +368,7 @@ body {
 .advantages-item-bridge .advantages-title::before {
   background-color: #FFFFFF;
 }
-.advantages-description{
+.advantages-description {
   margin: 0;
   padding: 0;
 }
@@ -575,7 +570,7 @@ body {
 a[href^="tel:"] {
   font-size: 40px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration-line: none;
   width: 350px;
   padding-left: 38px;
@@ -677,8 +672,9 @@ a[href^="tel:"]:active {
 .modal-close-button:focus {
   outline: 3px solid #83B3D3;
 }
-.modal-close-button:active {
-  opacity: 20%;
+.modal-quest:active .modal-close-button::after,
+.modal-quest:active .modal-close-button::before {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .modal-title {
   margin: 0;
@@ -715,7 +711,7 @@ a[href^="tel:"]:active {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   margin-top: 4px;
   margin-bottom: 23px;
   margin-left: 20px;
@@ -753,7 +749,7 @@ a[href^="tel:"]:active {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   border-radius: 4px;
   border: none;
   min-height: 48px;
@@ -783,13 +779,11 @@ a[href^="tel:"]:active {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
-  opacity: 60%;
+  color: rgba(0, 0, 0, 0.6);
 }
 .quest-form-field[type="text"]:hover,
 .quest-form-field[type="text"]:focus  {
  background-color: #E6E6E6;
- opacity: 60%;
 }
 .quest-form-field[type="text"]:focus {
   outline: 3px solid #82B3D3;
@@ -855,15 +849,14 @@ a[href^="tel:"]:active {
   margin: 14px 10px;
 }
 .button-plus svg,
-.button-minus svg{
-  fill:#000000;
-  opacity:0.3;
+.button-minus svg {
+  fill: rgba(0, 0, 0, 0.3);
 }
 .button-plus:hover svg,
 .button-minus:hover svg,
 .button-plus:focus svg,
 .button-minus:focus svg {
-  opacity: 1;
+  fill: #000000;
 }
 .button-minus:focus-visible,
 .button-plus:focus-visible {
@@ -872,7 +865,9 @@ a[href^="tel:"]:active {
   border-radius: 4px;
 }
 .button-minus:hover,
-.button-plus:hover {
+.button-plus:hover,
+.button-minus:active,
+.button-plus:active {
   background-color: #E5E5E5;
 }
 .button-minus:focus,
@@ -880,10 +875,9 @@ a[href^="tel:"]:active {
   border: 3px solid #83B3D3;
   background-color:#E5E5E5 ;
 }
-.button-minus:active,
-.button-plus:active {
-  background-color: #E5E5E5;
-  opacity: 20%;
+.button-minus:active svg,
+.button-plus:active svg {
+  fill: rgba(0, 0, 0, 0.3);
 }
 .plus-minus {
   display: block;
@@ -957,21 +951,21 @@ a[href^="tel:"]:active {
   background-image: url("../images/vector/icon-tooltip-corner.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   transform: rotate(360deg);
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 .main-inner {
   width: 100%;
   background-color: #FFFFFF;
-  color:#000000;
+  color: #000000;
 }
 .hotels-filter {
-  background-color: #6e90a7;
+  background-color: #6E90A7;
   color: #FFFFFF;
   background-image: url("../images/picture/catalog-filter-inner.jpg");
   object-fit: cover;
@@ -1025,10 +1019,10 @@ a[href^="tel:"]:active {
   color: #FFFFFF;
 }
 .breadcrumbs-link:hover {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 }
 .breadcrumbs-link:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .catalog-filter {
   display: flex;
@@ -1092,16 +1086,22 @@ a[href^="tel:"]:active {
 .control-input {
   opacity: 0;
 }
+.control-mark:hover  {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.control-mark:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .control-input:hover + .control-mark,
 .control-input:hover + .control-mark + .control-label {
-  opacity: 60%;
+  color: rgba(255, 255, 255, 0.6);
 }
 .control-input:focus + .control-mark  {
   outline: 3px solid #83B3D3;
 }
 .control-input:active + .control-mark,
 .control-input:active + .control-mark + .control-label {
-  opacity: 30%;
+  color: rgba(255, 255, 255, 0.3);
 }
 .control-input:disabled + .control-mark {
   color: #3F5E72;
@@ -1254,8 +1254,7 @@ a[href^="tel:"]:active {
   left: 106px;
   width: 41px;
   height: 24px;
-  color: #000000;
-  opacity: 30%;
+  color: rgba(0, 0, 0, 0.3);
 }
 .range-input-min[type="number"]::placeholder {
   padding-right: 0;
@@ -1338,8 +1337,7 @@ a[href^="tel:"]:active {
 }
 .select-control:disabled {
   border: 2px solid #000000;
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 .list-button {
   display: flex;
@@ -1426,10 +1424,7 @@ a[href^="tel:"]:active {
 .hotel-card-link:focus {
   box-shadow: 0 3px 3px 3px #83B3D3;
   border-radius: 4px;
-  color: rgba(117, 97, 87, 1);
-}
-.hotel-card-link:active {
-  opacity: 0.3;
+  color: #756157;
 }
 .hotel-card-image  {
   display: block;
@@ -1553,11 +1548,11 @@ a[href^="tel:"]:active {
 }
 .pagination-link:hover,
 .pagination-link:focus {
-  background-color: #68A3CA;
+  background-color: #68A2CA;
   outline: 1px solid #83B3D3;
 }
 .pagination-link:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .pagination-current:hover,
 .pagination-current:focus,
@@ -1565,7 +1560,6 @@ a[href^="tel:"]:active {
   background-color: #F2F2F2;
   color: #000000;
   outline: none;
-  opacity: 1;
 }
 .pagination-next:hover,
 .pagination-next:focus,
@@ -1573,7 +1567,6 @@ a[href^="tel:"]:active {
   background-color: #FFFFFF;
   color: #000000;
   outline: none;
-  opacity: 1;
 }
 
 /*стили для .subscribe-inner*/
