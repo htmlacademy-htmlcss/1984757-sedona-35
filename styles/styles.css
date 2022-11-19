@@ -1419,7 +1419,7 @@ a[href^="tel:"]:active {
   border-radius: 4px;
 }
 .hotel-card-link:hover {
-  color: rgba(117, 97, 87, 0.3);
+  color: #83B3D3;
 }
 .hotel-card-link:focus {
   box-shadow: 0 3px 3px 3px #83B3D3;
