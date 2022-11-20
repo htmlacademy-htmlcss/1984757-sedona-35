@@ -999,7 +999,7 @@ a[href^="tel:"]:active {
 }
 .breadcrumbs-link {
   display: block;
-  margin-right: 8px;
+  margin-right: 9px;
   min-width: 12px;
   min-height: 12px;
 }
@@ -1178,7 +1178,7 @@ a[href^="tel:"]:active {
 }
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -2px;
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1248,10 +1248,10 @@ a[href^="tel:"]:active {
 .filter-text {
   display: block;
   position: absolute;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
-  top: 14px;
-  left: 106px;
+  top: 15px;
+  left: 104px;
   width: 41px;
   height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -1285,7 +1285,7 @@ a[href^="tel:"]:active {
 .search-hotel-inner {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 .search-result-title {
   font-size: 30px;
@@ -1308,7 +1308,7 @@ a[href^="tel:"]:active {
 }
 .select-control {
   min-width: 292px;
-  padding: 14px 19px 12px;
+  padding: 14px 19px 10px;
   margin-right: 5px;
   line-height: inherit;
   font-size: inherit;
@@ -1319,7 +1319,7 @@ a[href^="tel:"]:active {
   cursor: pointer;
   background-image: url(../images/vector/icon-select.svg);    /*стрелка*/
   background-repeat: no-repeat;
-  background-position: right 17px center;
+  background-position: right 17px top 21px;
   appearance: none;
 }
 .select-control::-moz-outer-spin-button,
@@ -1353,7 +1353,7 @@ a[href^="tel:"]:active {
   margin-right: 12px;
 }
 .card {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .card-grid-toggle {
   display: flex;
@@ -1361,8 +1361,6 @@ a[href^="tel:"]:active {
   justify-content: center;
   width: 45px;
   height: 45px;
-}
-.card-grid-toggle {
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -1402,7 +1400,7 @@ a[href^="tel:"]:active {
   row-gap: 16px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  padding: 18px 20px 20px;
+  padding: 19px 20px 20px;
 }
 .hotel-card-link {
   grid-column: 1/-1;
